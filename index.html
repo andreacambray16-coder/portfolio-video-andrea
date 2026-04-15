@@ -533,6 +533,11 @@
   </a>
 
   <script>
+    if (location.hostname === 'portfolio-video-andrea.pages.dev') {
+      location.replace('https://andreacambray.com' + location.pathname + location.search);
+    }
+  </script>
+  <script>
     document.querySelectorAll('.linkedin-wrapper').forEach(wrapper => {
       wrapper.addEventListener('click', function () {
         this.querySelector('.video-thumb')?.remove();
